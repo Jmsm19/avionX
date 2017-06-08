@@ -34,7 +34,6 @@
 .pajaro3,
 .pajaro4,
 .dark-plane {
-  position: relative;
   transform: scaleX(-1);
   height: 70px;
   width: 70px;
