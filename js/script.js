@@ -13,7 +13,7 @@ var darkPlane1 = $('.dark-plane');
 function aparecer(enemigo) {
 	var enemy = $('.' + enemigo);
 	if (enemy.length === 0) {
-		var random = Math.floor((Math.random() * 590) + 30);
+		var random = Math.floor((Math.random() * 590) + 70);
 		$('.cielo').append('<div class="' + enemigo + '"></div>');
 		enemy = $('.' + enemigo);			
 		enemy.css({top: random});
@@ -46,7 +46,7 @@ $(document).ready( function() {
 	 * ==================================== */
 	var seMueve;
 	function arriba() {
-		if (AVION.position().top > 50)  {
+		if (AVION.position().top > 70)  {
 			AVION.css('top', '-=' + VELOCIDAD);
 			if ( seMueve === true ) {
 			  	setTimeout( arriba , 7 );

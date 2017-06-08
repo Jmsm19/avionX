@@ -5,6 +5,22 @@
   position: absolute;
 }
 
+.hud {
+  width: 100%;
+  padding: 10px;
+  height: 70px;
+  font-size: 16px;
+  border: 1px solid #232323;
+}
+
+.hud p {
+  font-weight: bold;
+}
+
+.hud span {
+  font-weight: normal;
+}
+
 .cielo {
   position: fixed;
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/4b/2d/4d/4b2d4d44e703c18bd3774553c98c0340.png);
@@ -24,7 +40,7 @@
 .avion {
   position: absolute;
   height: 70px;
-  top: 50px;
+  top: 70px;
   left: 50px;
   transform: scaleX(-1);
 }
