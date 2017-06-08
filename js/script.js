@@ -46,7 +46,7 @@ $(document).ready( function() {
 	 * ==================================== */
 	var seMueve;
 	function arriba() {
-		if (AVION.position().top > 30)  {
+		if (AVION.position().top > 50)  {
 			AVION.css('top', '-=' + VELOCIDAD);
 			if ( seMueve === true ) {
 			  	setTimeout( arriba , 7 );
