@@ -5,25 +5,35 @@
   position: absolute;
 }
 
+.perder {
+  width: 100vh;
+  height: 100vh;
+}
+
+h1 {
+  width: 100%;
+}
+
 .hud {
   width: 100%;
   padding: 10px;
   height: 70px;
   font-size: 16px;
-  border: 1px solid #232323;
 }
 
 .hud p {
   font-weight: bold;
-}
-
-.hud span {
-  font-weight: normal;
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
 }
 
 .cielo {
   position: fixed;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/4b/2d/4d/4b2d4d44e703c18bd3774553c98c0340.png);
+  background-image: url('./img/cielo.png');
   animation: 30s scroll infinite linear;
   top: 0;
   left: 0;
