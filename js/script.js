@@ -1,11 +1,14 @@
 // var conVida = true;
 const AVION = $('.avion');
 const VELOCIDAD = 3;
+var tiempo = 0;
 var pajaro1 = $('.pajaro1');
 var pajaro2 = $('.pajaro2');
 var pajaro3 = $('.pajaro3');
 var pajaro4 = $('.pajaro4');
 var darkPlane1 = $('.dark-plane');
+
+$('.muerto').text(tiempo);
 
 /* ==================================== *
 *           ENEMIGOS                   *
@@ -85,6 +88,15 @@ $(document).ready( function() {
 	 *           TEMPORIZADORES             *
 	 * ==================================== */
 
+	// TIEMPO TRANSCURRIDO
+	setInterval(function() {
+		tiempo++;
+		$('.tiempo').text(tiempo);
+		if (tiempo > 60) {
+			$('.tiempo').css({color: 'blue'});
+		}
+	}, 1000)
+
 	/* 
 		Chequea constantemente si el pajaro o el avion oscuro están fuera de la pantalla
 		Si es así, lo elimina del DOM 
@@ -138,10 +150,8 @@ $(document).ready( function() {
 			pajaro3.remove();
 			pajaro4.remove();
 			darkPlane1.remove();
-			// ALERTA
-			alert('PERDISTE')
 			// RECARGAR PAGINA
-			location.reload();			
+			location.replace('./perdiste.html');
 		}
 	}, 50);
 
