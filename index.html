@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Avión X</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inicio | Avión X</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 </head>
-<body class="cielo">
-	<div class="hud">
-		<p>Tiempo: <span class="tiempo">0</span></p>
-	</div>
-	<img class="avion" src="./img/avion.png">
-	
+<body id="menu-principal">
 
 	<audio class="bgm" src="./media/bgm.wav" type="audio/wav" loop="true" autoplay>
-	<script type="text/javascript" src="./js/script.js"></script>
+	  <p>Si lees esto, tu navegador no puede reproducir música.</p>
+	</audio>
+
+	<div class="container bienvenida">
+
+		<header class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="titulo">AVIÓN X</h1>
+      </div>
+    </header>
+
+    <content class="row">
+      <div class="col-md-12 text-center">
+        <a href="./nivel_1.html" class="btn btn-success btn-lg start" role="button" aria-pressed="false"><i class="fa fa-play" aria-hidden="true"></i> COMENZAR</a>
+      </div>
+    </content>
+
+	</div>
+
+	<footer>
+		<div class="container">
+			<p class="text-center">&copy; Copyright 2017 - Manten</p>
+		</div>
+	</footer>
+
 </body>
 </html>

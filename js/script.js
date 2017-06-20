@@ -151,7 +151,8 @@ $(document).ready( function() {
 			pajaro4.remove();
 			darkPlane1.remove();
 			// RECARGAR PAGINA
-			location.replace('./perdiste.html');
+			alert('Has perdido.')
+			location.replace('./index.html');
 		}
 	}, 50);
 
