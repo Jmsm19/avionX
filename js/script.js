@@ -42,7 +42,7 @@ function colisionaCon(enemigo) {
 	}
 };
 
-(function() {
+( () => {
   /* ==================================== *
 	 *           MOVIMIENTOS                *
 	 * ==================================== */
@@ -67,7 +67,7 @@ function colisionaCon(enemigo) {
 		}
 	};
 
-	document.addEventListener('keydown', function(event) {
+	document.addEventListener('keydown', (event) => {
 		// ARRIBA
 		if ((event.which === 38 || event.which === 87) && seMueve !== true) {
 			seMueve = true;
@@ -80,7 +80,7 @@ function colisionaCon(enemigo) {
 		}	
 	});
 
-	document.addEventListener('keyup', function() {
+	document.addEventListener('keyup',  () => {
 		// Solo aviso que el avion ya no se mueve
 		seMueve = false;
 	});
@@ -90,7 +90,7 @@ function colisionaCon(enemigo) {
 	 * ==================================== */
 
 	// TIEMPO TRANSCURRIDO
-	setInterval(function() {
+	setInterval( () => {
     tiempo++;
     var timer = document.querySelector('.tiempo');
 		timer.innerHTML = tiempo;
@@ -105,7 +105,7 @@ function colisionaCon(enemigo) {
 
 		También chequear por colisiones
 	*/
-	setInterval(function() {
+	setInterval( () => {
 		pajaro1 = document.querySelector('.pajaro1');
     pajaro2 = document.querySelector('.pajaro2');
 		pajaro3 = document.querySelector('.pajaro3');
@@ -158,20 +158,20 @@ function colisionaCon(enemigo) {
 	}, 50);
 
   // Cada cierto tiempo segundo, crea un pajaro (si no hay ninguno en pantalla)
-	setInterval(function() {
+	setInterval( () => {
 		aparecer('pajaro1');
 	}, 500);
-  setInterval(function() {
+  setInterval( () => {
 		aparecer('pajaro2');
 	}, 1000);
-	setInterval(function() {
+	setInterval( () => {
 		aparecer('pajaro3');
 	}, 2000);
-	setInterval(function() {
+	setInterval( () => {
 		aparecer('pajaro4');
 	}, 3000);
 	// Cada 1 segundo, crea un avion oscuro (si no hay ninguno en pantalla)
-	setInterval(function() {
+	setInterval( () => {
 		aparecer('dark-plane');
 	}, 10000);
 })();
