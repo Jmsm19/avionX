@@ -151,9 +151,9 @@ function colisionaCon(enemigo) {
       for (var i = 1; i < 99999; i++) {
         window.clearInterval(i);
       }
-      // RECARGAR PAGINA
-      alert('Has perdido.')
-      location.replace('./index.html');
+      // Abrir modal - Solo es posible con jQuery porque es de Bootstrap
+      $('#lostModal').modal();
+			document.querySelector('audio').pause();
     }
 	}, 50);
 

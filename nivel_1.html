@@ -3,6 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Avión X</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Mis estilos -->
 	<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 </head>
 <body class="cielo">
@@ -10,7 +19,23 @@
 		<p>Tiempo: <span class="tiempo">0</span></p>
 	</div>
 	<img class="avion" src="./img/avion.png">
-	
+
+	<!-- MODAL - GANAR -->
+	<div id="lostModal" class="modal fade" role="advertencia">
+	<div class="modal-dialog">
+		<!-- Contenido del Modal-->
+		<div class="modal-content">
+			<div class="modal-body">
+				<h1 class="text-center">¡ESTÁS MUERTO!</h1>
+				<p class="text-center"><small>&#x1f608 Y volverá a ocurrir. &#x1f608</small></p>
+			</div>
+			<div class="modal-footer">
+				<a href="./index.html" class="btn btn-success" role="button" aria-pressed="false" style="margin: 15px 0 0 5px">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i> Volver al inicio
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<audio class="bgm" src="./media/bgm.wav" type="audio/wav" loop="true" autoplay>
 	<script type="text/javascript" src="./js/script.js"></script>
